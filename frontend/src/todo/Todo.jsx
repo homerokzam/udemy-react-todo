@@ -6,7 +6,7 @@ class Todo extends Component {
     return(
       <div>
         Teste
-        <PageHeader />
+        <PageHeader name="Tarefas" small="Cadastro" />
       </div>
     );
   }
