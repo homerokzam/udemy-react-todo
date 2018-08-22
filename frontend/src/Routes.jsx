@@ -8,8 +8,8 @@ class Routes extends Component {
   render() {
     return(
       <Switch>
-        <Route path="/todos" component={<Todo />} />
-        <Route path="/about" component={<About />} />
+        <Route path="/todos" render={() => (<Todo />)} />
+        <Route path="/about" render={() => (<About/>)} />
         <Route from="*" to="/todos" />
       </Switch>
     );
