@@ -7,11 +7,13 @@ import About from './about/About';
 class Routes extends Component {
   render() {
     return(
-      <Switch>
-        <Route path="/todos" render={() => (<Todo />)} />
-        <Route path="/about" render={() => (<About/>)} />
-        <Route from="*" to="/todos" />
-      </Switch>
+      <div>
+        <Switch>
+          <Route exact path="/todos" render={() => (<Todo/>)} />
+          <Route exact path="/about" render={() => (<About/>)} />
+          <Route render={() => <h1>Page not found</h1>} />
+        </Switch>
+      </div>
     );
   }
 }
