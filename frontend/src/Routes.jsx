@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import { Switch, Link } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
+
+import Todo from './todo/Todo';
+import About from './about/About';
 
 class Routes extends Component {
   render() {
     return(
-      <div>
-        <Link to="/todos" />
-        <Link to="/about" />
-        <Link from="*" to="/todos" />
-      </div>
+      <Router>
+        <Route path="/todos" component={Todo} />
+        <Route path="/about" component={About} />
+        <Route from="*" to="/todos" />
+      </Router>
     );
   }
 }
