@@ -1,5 +1,6 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+import './template/Custom.css';
 
 import React, { Component } from 'react';
 import './App.css';

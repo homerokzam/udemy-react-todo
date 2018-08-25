@@ -5,7 +5,7 @@ class Menu extends Component {
   render() {
     return(
 
-<nav className="navbar navbar-inverse bg-inverse">
+<nav className="navbar navbar-inverse">
   <div className="container">
     <div className="navbar-header">
       <Link className="navbar-brand" to="#" >
